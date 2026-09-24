@@ -30,6 +30,28 @@ body{
   
     radial-gradient(circle at top,#596147 0%,#37402c 35%,#242b1d 100%);
 }
+  /* FIX BACKGROUND MOBILE */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100% !important;
+}
+
+body {
+    background-size: cover !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-size: 100% auto !important;
+        background-position: top center !important;
+        background-repeat: repeat-y !important;
+        background-attachment: scroll !important;
+    }
+}
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
