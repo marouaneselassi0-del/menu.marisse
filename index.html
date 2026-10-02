@@ -4,7 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Marisse Café & Crêpes</title>
+<script>
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
 
+window.addEventListener("pageshow", function () {
+  history.replaceState(null, "", window.location.pathname + window.location.search);
+  window.scrollTo(0, 0);
+
+  setTimeout(function () {
+    window.scrollTo(0, 0);
+  }, 100);
+});
+</script>
 <style>
     
 html, body {
